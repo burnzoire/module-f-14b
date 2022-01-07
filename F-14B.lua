@@ -378,8 +378,7 @@ defineToggleSwitch("PLT_AFCS_YAW", 22, 3036, 2108, "SAS", "PILOT AFCS Stability 
 define3PosTumb("PLT_AUTOPLT_VECTOR_CARRIER", 22, 3037, 2109, "Autopilot", "PILOT Autopilot - Vector / Automatic Carrier Landing")
 defineToggleSwitch("PLT_AUTOPLT_ALT", 22, 3038, 2110, "Autopilot", "PILOT Autopilot - Altitude Hold")
 define3PosTumb("PLT_AUTOPLT_HDG", 22, 3039, 2111, "Autopilot", "PILOT Autopilot - Heading / Ground Track")
-defineFixedStepTumb("PLT_AUTOPLT_ENGAGE", 22, 3040, 2112, 2, {-1, 1}, {-1, 1}, nil, "Autopilot", "PILOT Autopilot - Engage")
-
+defineToggleSwitch("PLT_AUTOPLT_ENGAGE", 22, 3040, 2112, "Autopilot", "PILOT Autopilot - Engage")
 -- Flaps
 definePotentiometer("PLT_FLAPS_LEVER", 19, 3044, 225, {0, 1}, "Flaps", "PILOT Flaps Lever")
 

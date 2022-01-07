@@ -1213,12 +1213,20 @@
                                                                     },
                                               "PLT_AUTOPLT_ENGAGE": {
                                                                                    "category": "Autopilot",
-                                                                               "control_type": "discrete_dial",
+                                                                               "control_type": "selector",
                                                                                 "description": "PILOT Autopilot - Engage",
                                                                                  "identifier": "PLT_AUTOPLT_ENGAGE",
                                                                                      "inputs": [ {
                                                                                                    "description": "switch to previous or next state",
                                                                                                      "interface": "fixed_step"
+                                                                                                  }, {
+                                                                                                      "description": "set position",
+                                                                                                        "interface": "set_state",
+                                                                                                        "max_value": 1
+                                                                                                  }, {
+                                                                                                         "argument": "TOGGLE",
+                                                                                                      "description": "Toggle switch state",
+                                                                                                        "interface": "action"
                                                                                                } ],
                                                                         "momentary_positions": "none",
                                                                                     "outputs": [ {
@@ -1230,7 +1238,7 @@
                                                                                                         "suffix": "",
                                                                                                           "type": "integer"
                                                                                                } ],
-                                                                           "physical_variant": "infinite_rotary"
+                                                                           "physical_variant": "toggle_switch"
                                                                     },
                                                  "PLT_AUTOPLT_HDG": {
                                                                                    "category": "Autopilot",
